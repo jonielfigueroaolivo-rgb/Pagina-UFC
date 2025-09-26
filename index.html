@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFC Información, Combates y Más</title>
+    <meta charset="UTF-8"> 
+
+    <style>
+        /* Estilos Generales para todo el BODY */
+        body {
+            background-color: black;
+            color: white; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ESTILO DE LA BARRA DE MENÚ (NAV) */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1a1a1a;
+            border-bottom: 3px solid red;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li a:hover {
+            background-color: red;
+            color: black; 
+        }
+
+        /* ESTILO DE LA SECCIÓN DE BIENVENIDA (donde va el fondo) */
+        #bienvenida {
+            /* ¡IMPORTANTE! Nombre de la imagen simple y corregido */
+            background-image: url('ufc_logo.jpg'); 
+            background-color: black; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* Centra el texto y el botón en el medio de la pantalla */
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding-top: 60px;
+        }
+        
+        .titulo-principal {
+            font-size: 3.5em; 
+            color: white; 
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px black, 0 0 5px red; 
+        }
+
+        .subtitulo {
+            font-size: 1.5em;
+            color: red;
+            margin-bottom: 40px;
+            text-shadow: 0 0 5px black;
+        }
+        
+        /* ESTILO DEL BOTÓN */
+        .btn-entrar {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: red; 
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-entrar:hover {
+            background-color: darkred;
+        }
+        
+        /* Estilos del Contenido (Debajo de la bienvenida) */
+        .contenido-seccion {
+            padding: 40px 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        h2 {
+            color: red;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 10px;
+        }
+        
+        .video-links a {
+            color: #FF4500; 
+            display: block;
+            margin: 10px 0;
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+        .video-links a:hover {
+             text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bienvenida">
+        <h1 class="titulo-principal">UFC Información, Combates y Más</h1>
+        <p class="subtitulo">por Joniel Figueroa</p>
+
+        <a href="#videos-destacados" class="btn-entrar">ENTRAR</a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#videos-destacados">Videos Destacados</a></li>
+            <li><a href="#peleadores">Peleadores</a></li>
+            <li><a href="#eventos">Próximos Eventos</a></li>
+        </ul>
+    </nav>
+    
+    <div id="videos-destacados" class="contenido-seccion">
+        <h2>Videos Destacados del Octágono</h2>
+        
+        <div class="video-links">
+            <a href="https://www.youtube.com/watch?v=xdjvl9DuTn0&t=352s" target="_blank">► Ver: Combate Estelar UFC 1 (Video con inicio en 5:52)</a>
+            
+            <a href="https://www.youtube.com/watch?v=jFtIa_AEFiA" target="_blank">► Ver: Combate Estelar UFC 2</a>
+        </div>
+    </div>
+    
+    <div id="peleadores" class="contenido-seccion">
+        <h2>Información de Peleadores</h2>
+        <p>Aquí pondremos las biografías, estadísticas y récords de tus peleadores favoritos.</p>
+    </div>
+
+    <div id="eventos" class="contenido-seccion">
+        <h2>Próximos Eventos</h2>
+        <p>Aquí podremos poner las carteleras, fechas y horas de los siguientes eventos de UFC.</p>
+    </div>
+
+
+</body>
+</html>
